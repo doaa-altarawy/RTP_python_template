@@ -1,0 +1,41 @@
+language: python
+
+sudo: false
+
+matrix:
+  include:
+    - python: 2.7
+    - python: 3.5
+    - python: 3.6
+
+branches:
+  only:
+    - master
+
+notifications:
+    email: false
+
+before_install:
+
+# Get local information about the machine
+  - uname -a
+  - free -m
+  - df -h
+  - ulimit -a
+  - python -V
+#  - pip install --upgrade pip setuptools
+
+# Install various required modules
+#  - pip install pytest pytest-cov
+#  - pip install codecov
+#  - pip install numpy
+
+# Install the library locally
+  - pip install -e .[tests]
+
+script:
+#  - pytest -v --cov=./
+   - pytest -v --doctest-modules --cov=./
+
+after_success:
+  - codecov
