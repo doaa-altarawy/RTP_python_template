@@ -22,7 +22,7 @@ if __name__ == "__main__":
             ],
             'tests': [
                 'pytest>=3.0',
-                # 'codecov',
+                'codecov',
                 'pytest-cov',
                 'pytest-pep8',
             ],
