@@ -38,7 +38,7 @@ before_install:
 
 script:
 #  - pytest -v --cov=./
-   - pytest -v --doctest-modules --cov=./
+   - pytest -v --doctest-modules
 
 after_success:
   - codecov
