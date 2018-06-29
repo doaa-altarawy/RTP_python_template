@@ -1,8 +1,28 @@
-comment:
-  layout: header, changes, diff
+# For more configuration details:
+# https://docs.codecov.io/docs/codecov-yaml
+
+
+# Coverage configuration
+# ----------------------
 coverage:
-  ignore:
-  - tests/.*
-  - setup.py
   status:
     patch: false
+
+  range: 70..90    # First number represents red, and second represents green
+                    # (default is 70..100)
+  round: down       # up, down, or nearest
+  precision: 2      # Number of decimal places, between 0 and 5
+
+# Ignoring Paths
+# --------------
+# which folders/files to ignore
+ignore:
+  - tests/.*
+  - setup.py
+
+# Pull request comments:
+# ----------------------
+# Diff is the Coverage Diff of the pull request.
+# Files are the files impacted by the pull request
+comment:
+  layout: header, changes, diff, Files
