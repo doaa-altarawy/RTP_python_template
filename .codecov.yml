@@ -1,6 +1,8 @@
 # For more configuration details:
 # https://docs.codecov.io/docs/codecov-yaml
 
+# Check if this file is valid by running in bash:
+# cat .codecov.yml | curl --data-binary @- https://codecov.io/validate
 
 # Coverage configuration
 # ----------------------
@@ -8,7 +10,7 @@ coverage:
   status:
     patch: false
 
-  range: "70..90"    # First number represents red, and second represents green
+  range: 70..90    # First number represents red, and second represents green
                     # (default is 70..100)
   round: down       # up, down, or nearest
   precision: 2      # Number of decimal places, between 0 and 5
@@ -25,4 +27,4 @@ ignore:
 # Diff is the Coverage Diff of the pull request.
 # Files are the files impacted by the pull request
 comment:
-  layout: header, changes, diff, Files
+  layout: reach, diff, flags, files  # accepted in any order: reach, diff, flags, and/or files
