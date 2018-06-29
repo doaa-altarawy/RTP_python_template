@@ -3,8 +3,7 @@
 [![Build Status](https://travis-ci.org/doaa-altarawy/RTP_python_template.svg?branch=master)](https://travis-ci.org/doaa-altarawy/RTP_python_template)
 
 # python_template
-This repository will provide a starting template for new Python-based projects.
-Here we pick a set of tools that we are familiar with; however, there are many
+This repository will provide a starting template for new Python-based projects in MolSSI software bootcamp. Here we pick a set of tools that we are familiar with; however, there are many
 tools extant that have similar functionality. 
 
 The following tools will be used:
