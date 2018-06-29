@@ -18,8 +18,8 @@ The following tools will be used:
 
 To run the test suite please first run `pip install -e .[tests]` in the base
 repository folder. This will register this repository with your local Python so
-that `import python_template` will work in any directory. Tests can then be run
-with `pytest -v` (or `py.test -v` in pytest versions <3.0). 
+that `import RTP_python_template` will work in any directory. Tests can then be run
+with `pytest -v --cov=./` (or `py.test -v --cov=./` in pytest versions <3.0). 
 
 
 
