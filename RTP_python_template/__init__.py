@@ -10,5 +10,7 @@ from . import text
 
 ### Import top-level files
 
-# Import numerics from the top level
-from .numerics import *
+# Import mean from the top level
+from .text.numerics import *
+
+from .list_util import mean, split

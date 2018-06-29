@@ -2,7 +2,7 @@
 # https://docs.codecov.io/docs/codecov-yaml
 
 # Check if this file is valid by running in bash:
-# cat .codecov.yml | curl --data-binary @- https://codecov.io/validate
+# curl -X POST --data-binary @.codecov.yml https://codecov.io/validate
 
 # Coverage configuration
 # ----------------------
@@ -10,7 +10,7 @@ coverage:
   status:
     patch: false
 
-  range: 70..90    # First number represents red, and second represents green
+  range: 70..90     # First number represents red, and second represents green
                     # (default is 70..100)
   round: down       # up, down, or nearest
   precision: 2      # Number of decimal places, between 0 and 5
